@@ -7,35 +7,42 @@
 body{
     background: #333;
     overflow-y: scroll;
-    /* display: block; */
+    scroll-behavior: smooth;
 }
-hr{
+#scrolling__bar{
+    background-color: #284de2c7;
+    z-index: 10;
+    display: block;
+    width: 0;
     height: 5px;
     border: none;
-    /* float: left; */
     padding: 0;
     margin: 0;
-    margin-top: 15px;
-    transition: background-color 1s linear;
+    margin-top: 40px;
+    /* transition: background-color 1s linear; */
 }
 
 .header{
     position: fixed;
     width: 100%;
     height: auto;
-    padding: 10px;
-    background-color: #333;
+    background-color: #444;
+    z-index: 5;
 }
 
 .header ul{
     list-style-type: none;
-    /* display: block; */
 }
 
 .header ul li{
+    padding: 10px 0;
     float: left;
     width: 33%;
     text-align: center;
+}
+
+.header ul li:hover{
+    background-color: #222;
 }
 
 a{
