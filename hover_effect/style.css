@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0; box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.container {
+    display: flex;
+    width: 80vw;
+}
+
+.slide {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 1;
+    height: 50vh;
+    transition: opacity linear 200ms;
+    cursor: pointer;
+    border-radius: 15px;
+    transform-style: preserve-3d;
+    transition: transform 1s linear;
+}
+
+.slide:hover{
+    opacity: 0.8;
+    transition: opacity linear 200ms;
+}
+
+/* @keyframes myAnim {
+    from{
+        transform: rotateX(0);
+    }
+    to{
+        transform: rotateX(-100deg);
+    }
+} */
