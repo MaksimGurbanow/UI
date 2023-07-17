@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    overflow: hidden;
+}
+
+.container, .carousel{
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.buttons > button{
+    position: fixed;
+    background-color: rgb(94, 97, 100);
+    cursor: pointer;
+    padding: 3px;
+    opacity: 0.5;
+    border: none;
+    width: 40px;
+    height: 40px;
+    top: 50%;
+}
+#left-button {
+    left: 1%;
+    visibility: hidden;
+}
+
+
+#right-button {
+    right: 1%;
+}
+
+#right-button:hover, #left-button:hover{
+    opacity: 1;
+}
+
+
+.slide {
+    margin: 0 2.5vw;
+    width: 95vw;
+    height: 95vh;
+}
+
